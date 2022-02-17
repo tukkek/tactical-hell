@@ -1,6 +1,17 @@
 # Tactical Hell
 
-(**This project is currently in beta state.** It can definitely be played and enjoyed but I'm not 100% happy with balance quite yet).
+(**TH is currently in beta state.** You can generate and enjoy WADs with Oblige but I'm not 100% happy with balance quite yet).
+
+This project offers:
+
+1. Doom 2-compatible WADs that you can immediately download and play (see `Archive` section).
+2. A GZDoom mod-list that you can use with the provided WADs and most other WADs and games (see `Suggested mods`section).
+3. An Obsidian configuration file you can use to automatically generate your own WADs (see `Generating your own WADs` section).
+4. A number of high-quality, free and/or copyright-friendly music that fits the intended gameplay (see the `Suggested soundtrack` section).
+
+While each one is designed to be part of a greater whole, they are modular and can be used indepedently of each other to your own liking.
+
+## Rationale
 
 I love Oblige and [Obsidian](https://github.com/dashodanger/Obsidian/) but I have struggled to fine-tune settings that feel right for me. Part of it is that I want more depth in a FPS than vanilla Doom can provide and also that I'd rather play WADs as perma-death roguelites than with the more traditional Doom community approach of mastering levels and WADs death-by-death until you know them like the back of your hand.
 
@@ -47,7 +58,7 @@ If you are using more or less mods in your own installation, add or remove lines
 
 If you are using Linux, the configuration file and mod files should are found on `/home/<user>/.config/zdoom/` instead.
 
-## Suggested sountrack
+## Suggested soundtrack
 
 Here are some amazing, high-octane, DMCA-friendly music that should go well with Tactical Hell:
 
@@ -76,7 +87,7 @@ Sadly, as far as I know, GZDoom doesn't support this natively but you can either
 
 To see and change which key opens the console, open the in-game menu, then choose Options, Customize Controls, Other and finally Open Console.
 
-## Making your own WADs with Obsidian
+## Generating your own WADs with Obsidian
 
 This version of Tactical Hell is compatible with [Obsidian's Beta 19 stable release](https://github.com/dashodanger/Obsidian/releases/tag/Obsidian-Current-Stable). You will need to download a copy before starting. If you are not using Windows, follow the instructions on the `COMPILING.md` file to compile and run the executable.
 
