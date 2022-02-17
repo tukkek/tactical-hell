@@ -1,6 +1,6 @@
 # Tactical Hell
 
-(**TH is currently in beta state.** You can generate and enjoy WADs with Oblige but I'm not 100% happy with balance quite yet).
+(**TH is currently in beta state.** You can generate and enjoy WADs with Obsidian but I'm not 100% happy with balance quite yet).
 
 This project offers:
 
