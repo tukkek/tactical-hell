@@ -322,11 +322,11 @@ map_format = udmf
 @megawad_swapper = 0
 
 @misc = 1
-  float_oblige5x_grammar = 0.0
-  float_layout_absurdity = 0.0
-  float_linear_mode = 0.0
-  float_nature_mode = 0.0
-  float_streets_mode = 15.0
+  float_oblige5x_grammar = 10.0
+  float_layout_absurdity = 10.0
+  float_linear_mode = 10.0
+  float_nature_mode = 10.0
+  float_streets_mode = 10.0
   bool_urban_streets_mode = 1.0
   room_size_multiplier = mixed
   room_area_multiplier = mixed
