@@ -22,8 +22,6 @@
 -- Phytolizer
 -- https://github.com/caligari87/ObAddon/
 
-seed = 702500867043124122                                
-
 ---- Game Settings ----
 
 game = doom2
@@ -61,10 +59,10 @@ bool_build_nodes_edge = 0.0
 ---- Monsters ----
 
 float_mons = Progressive
-float_mix_it_up_upper_range = 0.7
+float_mix_it_up_upper_range = 0.6
 float_mix_it_up_lower_range = 0.35
 float_strength = 1.3
-float_ramp_up = 0.75
+float_ramp_up = 0.5
 bool_quiet_start = 1.0
 mon_variety = mixed
 mon_variety_jumpstart = default
@@ -80,8 +78,8 @@ secret_monsters = no
 ---- Pickups ----
 
 health = more
-ammo = more
-weapons = normal
+ammo = heaps
+weapons = very_soon
 items = normal
 secrets = mixed
 secrets_bonus = none
@@ -173,7 +171,7 @@ map_format = udmf
   float_blue_armor = Default
   float_rocket = Default
 
-@doom_mon_control = 0
+@doom_mon_control = 1
   float_mancubus = Default
   float_arach = Default
   float_ss_nazi = Default
@@ -209,8 +207,8 @@ map_format = udmf
   bool_rats = 1.0
   bool_flies = 0.0
 
-@gzdoom_marine_closets = 0
-  float_m_c_chance = 100.0
+@gzdoom_marine_closets = 1
+  float_m_c_chance = 0.0
   bool_m_c_power = 1.0
   m_c_tech = mid
   m_c_color = MarAI1
@@ -391,7 +389,7 @@ map_format = udmf
 
 @music_swapper = 1
 
-@prefab_control = 0
+@prefab_control = 1
   bool_autodetail = 1.0
   pf_crushers = 1
   wall_prob = fab_default
@@ -423,7 +421,7 @@ map_format = udmf
   float_gotcha_strength = 4.0
   float_gotcha_qty = 1.2
 
-@procedural_gotcha_zdoom = 1
+@procedural_gotcha_zdoom = 0
   boss_gen_steepness = rare
   float_gotcha_qty = 1.2
   float_gotcha_strength = 4.0
@@ -532,7 +530,7 @@ map_format = udmf
   marine_saw = default
   marine_fist = default
 
-@zdoom_marines = 0
+@zdoom_marines = 1
   qty = scarce
 
 @zdoom_specials = 1
