@@ -168,7 +168,7 @@ map_format = udmf
   float_cells = Default
   float_cell_pack = Default
 
-@doom_mon_control = 1
+@doom_mon_control = 0
   float_zombie = Default
   float_shooter = Default
   float_gunner = Default
@@ -315,7 +315,7 @@ map_format = udmf
 
 @iwad_mode = 0
 
-@jokewad_module = 1
+@jokewad_module = 0
   bool_fireblu_mode = 0.0
   bool_pandemic_mode = 0.0
 
@@ -408,8 +408,8 @@ map_format = udmf
   float_gotcha_strength = 4.0
   gotcha_map_size = small
 
-@procedural_gotcha_zdoom = 0
-  gotcha_frequency = final
+@procedural_gotcha_zdoom = 1
+  gotcha_frequency = epi
   float_gotcha_qty = 1.2
   float_gotcha_strength = 4.0
   gotcha_map_size = small
@@ -501,7 +501,7 @@ map_format = udmf
   episode3 = no_change
   secret = no_change
 
-@zdoom_ambient_sound = 1
+@zdoom_ambient_sound = 0
   snd_start_id = 20000
 
 @zdoom_marine_control = 1
@@ -517,7 +517,7 @@ map_format = udmf
   marine_rail = none
   marine_bfg = none
 
-@zdoom_marines = 1
+@zdoom_marines = 0
   zdoom_marine_qty = scarce
 
 @zdoom_specials = 1
