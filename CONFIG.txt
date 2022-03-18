@@ -23,8 +23,6 @@
 -- Phytolizer
 -- https://github.com/caligari87/ObAddon/
 
-seed = 6420767259425501627                               
-
 ---- Game Settings ----
 
 game = doom2
@@ -57,8 +55,8 @@ bool_build_nodes_edge = 0.0
 ---- Combat ----
 
 float_mons = Progressive
-float_mix_it_up_upper_range = 0.6
-float_mix_it_up_lower_range = 0.35
+float_mix_it_up_upper_range = 0.35
+float_mix_it_up_lower_range = 0.15
 float_strength = 1.0
 float_ramp_up = 0.5
 bool_pistol_starts = 1.0
@@ -146,20 +144,20 @@ map_format = udmf
   bool_custom_error_texture = 0.0
   live_minimap = none
 
-@doom_item_control = 0
+@doom_item_control = 1
   float_potion = Default
   float_stimpack = Default
   float_medikit = Default
-  float_helmet = Default
+  float_helmet = 3.0
   float_green_armor = Default
   float_blue_armor = Default
   float_soul = Default
   float_backpack = Default
-  float_berserk = Default
+  float_berserk = 0.0
   float_invis = Default
   float_invul = Default
-  float_allmap = Default
-  float_goggles = Default
+  float_allmap = 0.0
+  float_goggles = 0.0
   float_mega = Default
   float_bullets = Default
   float_bullet_box = Default
@@ -391,8 +389,8 @@ map_format = udmf
   pf_dexterity = 1
   pf_gamble = 1
   pf_sight_ambushes = 1
-  pf_mirror_mazes = 1
-  pf_dark_mazes = 1
+  pf_mirror_mazes = 0.33
+  pf_dark_mazes = 2
   pf_stair_ladders = 1
   bool_jump_crouch = 1.0
   pf_damaging_halls = default
@@ -412,25 +410,25 @@ map_format = udmf
 
 @procedural_gotcha_zdoom = 1
   gotcha_frequency = epi
-  float_gotcha_qty = 1.2
-  float_gotcha_strength = 4.0
+  float_gotcha_qty = 1.0
+  float_gotcha_strength = 2.0
   gotcha_map_size = small
   boss_gen_steepness = rare
   bool_boss_gen = 1.0
   bool_gotcha_boss_fight = 1.0
-  boss_gen_diff = default
-  boss_gen_health = default
+  boss_gen_diff = easier
+  boss_gen_health = less
   boss_gen_hitscan = default
   bool_boss_gen_hpbar = 0.0
   bool_boss_gen_music = 0.0
-  boss_gen_reinforce = default
-  boss_gen_reinforcerate = default
-  bool_boss_gen_types = 0.0
+  boss_gen_reinforce = weaker
+  boss_gen_reinforcerate = weaker
+  bool_boss_gen_types = 1.0
   boss_gen_typelimit = softlimit
   boss_gen_weap = close
   boss_gen_exit = default
-  float_boss_gen_ammo = 3.0
-  float_boss_gen_heal = 3.0
+  float_boss_gen_ammo = 4.0
+  float_boss_gen_heal = 4.0
 
 @quake_mon_control = 0
   dog = default
