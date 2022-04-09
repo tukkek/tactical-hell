@@ -23,6 +23,8 @@
 -- Phytolizer
 -- https://github.com/caligari87/ObAddon/
 
+seed = 8768771947414914899                               
+
 ---- Game Settings ----
 
 game = doom2
@@ -75,7 +77,7 @@ secret_monsters = no
 ---- Pickups ----
 
 health = more
-ammo = heaps
+ammo = more
 weapons = very_soon
 items = normal
 secrets = mixed
