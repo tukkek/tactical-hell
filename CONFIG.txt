@@ -23,6 +23,8 @@
 -- Phytolizer
 -- https://github.com/caligari87/ObAddon/
 
+seed = 6114112171276074889                               
+
 ---- Game Settings ----
 
 game = doom2
@@ -410,8 +412,8 @@ map_format = udmf
 
 @procedural_gotcha_zdoom = 1
   gotcha_frequency = epi
-  float_gotcha_qty = 0.5
-  float_gotcha_strength = 2.0
+  float_gotcha_qty = 0.2
+  float_gotcha_strength = 0.0
   gotcha_map_size = small
   boss_gen_steepness = rare
   bool_boss_gen = 1.0
@@ -421,13 +423,13 @@ map_format = udmf
   boss_gen_hitscan = default
   bool_boss_gen_hpbar = 0.0
   bool_boss_gen_music = 0.0
-  boss_gen_reinforce = weaker
-  boss_gen_reinforcerate = weakest
+  boss_gen_reinforce = none
+  boss_gen_reinforcerate = weakester
   bool_boss_gen_types = 1.0
   boss_gen_typelimit = softlimit
   boss_gen_weap = close
-  boss_gen_exit = default
-  float_boss_gen_ammo = 4.0
+  boss_gen_exit = item
+  float_boss_gen_ammo = 5.0
   float_boss_gen_heal = 5.0
 
 @quake_mon_control = 0
