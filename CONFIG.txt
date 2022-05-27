@@ -23,8 +23,6 @@
 -- Phytolizer
 -- https://github.com/caligari87/ObAddon/
 
-seed = 6114112171276074889                               
-
 ---- Game Settings ----
 
 game = doom2
@@ -352,7 +350,7 @@ map_format = udmf
   corner_style = themed
   liquid_sinks = yes
   darkness = mixed
-  float_minimum_brightness = 128.0
+  float_minimum_brightness = 144.0
   float_maximum_brightness = 256.0
   barrels = mixed
   doors = mixed
