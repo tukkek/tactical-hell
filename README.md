@@ -2,12 +2,12 @@
 
 (**TH is currently in beta state.** You can generate and enjoy WADs with Obsidian but I'm not 100% happy with balance quite yet).
 
-This project offers:
+This document's sections are organized according to features the project offers:
 
-1. Doom 2-compatible WADs that you can immediately download and play (see `Archive` section).
-2. A GZDoom mod-list that you can use with the provided WADs and most other WADs and games (see `Suggested mods`section).
-3. An Obsidian configuration file you can use to automatically generate your own WADs (see `Generating your own WADs` section).
-4. A number of high-quality, free and/or copyright-friendly music that fits the intended gameplay (see the `Suggested soundtrack` section).
+1. **Archive**: Doom 2-compatible WADs that you can immediately download and play.
+2. **Suggested mods**: a GZDoom mod-list that you can use with the provided WADs and most other WADs and games.
+3. **Generating your own WADs**: an Obsidian configuration file you can use to automatically generate new WADs.
+4. **Suggested soundtrack**: a number of high-quality, free and/or copyright-friendly music that fits the intended gameplay.
 
 While each one is designed to be part of a greater whole, they are modular and can be used indepedently of each other to your own liking.
 
