@@ -29,7 +29,7 @@ If this sounds a lot like a personal choice of Obsidian settings that needn't be
 
 Episodes found on the `WADs/` folder in this repository have been tested and beaten in Ironman style and are the fastest way to enjoy Tactical Hell. The easiest way to get them is to use GitHub's [Download ZIP feature](https://github.com/tukkek/tactical-hell/archive/refs/heads/main.zip) and then extract the folder using your operating-system's default applicatoin or something like [7-zip](https://www.7-zip.org/).
 
-If you happen to find an `obsolete/` folder inside the WAD folder, that means that those have been tested with a previous selection of mods than the currently recommended list in the next section. If they are kept in the archive, they are most likely still playable on their own but they might not have been tested with the latest selection of mods to guarantee they're [ironman]-friendly or properly balanced in general. If they turn out to be too easy or too hard compared to the most current episodes availabe, try adjusting their in-game difficulty accordingly;
+If you happen to find an `obsolete/` folder inside the WAD folder, that means that those have been tested with a previous selection of mods than the currently recommended list in the next section. If they are kept in the archive, they are most likely still playable on their own but they might not have been tested with the latest selection of mods to guarantee they're ironman-friendly or properly balanced in general. If they turn out to be too easy or too hard compared to the most current episodes availabe, try adjusting their in-game difficulty accordingly;
 
 ## Suggested mods
 
@@ -74,7 +74,7 @@ This is mostly a discussion on how I test the Obsidian settings found in the pro
 
 Since WADs included in this repository are episode-length and finding the right settings takes playing multiple WADs fully, I will often test them on a lower difficulty (Not too rough). If I can beat the WAD on my first try, while playing fairly casually, then it is likely to be added to the archive. I also consider ending most levels with high health and a reasonable amount of surplus ammo to carry over to be a good sign that the WAD would also be Ironman-friendly on the default difficutly (Hurt me plenty).
 
-Aiming towards the "normal" difficulty should mean that there is a lot of leeway to both players of higher and lower skill ceiling that myself, with or without using the mods suggested above. Since I cannot possibly find a balance that will please everyone at the same time, shooting for the middle and letting individual players find their own preferred difficulty setting seems like the next-best approach.
+Aiming towards the "normal" difficulty should mean that there is a lot of leeway to both players of higher and lower skill ceiling than myself, with or without using the mods suggested above. Since I cannot possibly find a balance that will please everyone at the same time, shooting for the middle and letting individual players find their own preferred difficulty setting seems like the next-best approach.
 
 ### Semi-permadeath approach
 
