@@ -1,7 +1,7 @@
--- CONFIG FILE : OBSIDIAN V20 "Unstable"
--- Build 2022.03.06
+-- CONFIG FILE : OBSIDIAN 20 "Gates of Tartarus"
+-- Build 2023.01.14
 -- Based on OBLIGE Level Maker (C) 2006-2017 Andrew Apted
--- https://github.com/dashodanger/Obsidian/wiki
+-- https://obsidian-level-maker.github.io
 
 -- Obsidian (C) 2018-2022
 -- MsrSgtShooterPerson
@@ -21,24 +21,26 @@
 -- josh771
 -- dashodanger
 -- Phytolizer
--- https://github.com/caligari87/ObAddon/
+-- https://github.com/dashodanger/Obsidian/
 
 ---- Game Settings ----
 
+engine = idtech_1
 game = doom2
-engine = zdoom
+port = zdoom
 length = episode
 theme = bit_mixed
 
 ---- Architecture ----
 
 float_size = Progressive
-float_level_upper_bound = 30.0
-float_level_lower_bound = 22.0
+float_level_upper_bound = 30
+float_level_lower_bound = 22
 level_size_ramp_factor = 1
 level_size_bias = default
 mixin_type = normal
-bool_prebuilt_levels = 1.0
+bool_prebuilt_levels = 1
+float_overall_lighting_mult = 1
 outdoors = mixed
 caves = mixed
 liquids = mixed
@@ -48,19 +50,23 @@ steepness = mixed
 zdoom_vista = sky_gen_smart
 zdoom_skybox = themed
 
----- Map Build Options ----
+---- Architecture ----
 
-bool_build_nodes_edge = 0.0
+float_size_wolf_3d = 36
+float_level_upper_bound_wolf_3d = 75
+float_level_lower_bound_wolf_3d = 10
+level_size_ramp_factor_wolf_3d = 0.66
+level_size_bias_wolf_3d = default
 
 ---- Combat ----
 
 float_mons = Progressive
 float_mix_it_up_upper_range = 0.35
 float_mix_it_up_lower_range = 0.15
-float_strength = 1.0
+float_strength = 1
 float_ramp_up = 0.5
-bool_pistol_starts = 1.0
-bool_quiet_start = 1.0
+bool_pistol_starts = 1
+bool_quiet_start = 1
 mon_variety = mixed
 mon_variety_jumpstart = default
 bosses = medium
@@ -71,6 +77,12 @@ trap_qty = easier
 cages = rare
 cage_qty = default
 secret_monsters = no
+
+---- Combat ----
+
+float_mons_wolf_3d = 1
+float_mix_it_up_upper_range_wolf_3d = 10
+float_mix_it_up_lower_range_wolf_3d = 0
 
 ---- Pickups ----
 
@@ -83,35 +95,39 @@ secrets_bonus = none
 
 ---- Map Build Options ----
 
-bool_build_reject = 0.0
+bool_build_reject = 0
 
----- SLUMP Architecture ----
+---- Architecture ----
 
-float_minrooms_slump = 15.0
-float_bigify_slump = 50.0
-float_forkiness_slump = 50.0
-bool_dm_starts_slump = 0.0
-bool_major_nukage_slump = 0.0
-bool_immediate_monsters_slump = 1.0
+float_minrooms_slump = 15
 
----- SLUMP Monsters ----
+---- Combat ----
 
 slump_mons = normal
+bool_quiet_start_slump = 1
 
 ---- Map Build Options ----
 
-bool_build_nodes_udmf = 0.0
 map_format = udmf
+
+---- Map Build Options ----
+
+bool_build_nodes_zdoom = 0
+map_format_zdoom = udmf
 
 ---- Other Modules ----
 
+@alt_shape_grammars = 0
+  float_grammar_boxes_of_death = 0
+
 @armaetus_epic_textures = 0
-  bool_custom_liquids = 1.0
+  bool_custom_liquids = 1
   custom_trees = zs
   environment_themes = random
-  bool_include_package = 1.0
-  bool_include_brightmaps = 1.0
-  bool_no_env_theme_for_hell = 0.0
+  bool_include_package = 1
+  bool_include_brightmaps = 1
+  bool_include_custom_actors = 1
+  bool_no_env_theme_for_hell = 0
 
 @chex3_mon_control = 0
   float_commonus = Default
@@ -134,30 +150,35 @@ map_format = udmf
   weapon_prefs = normal
 
 @debugger = 0
-  name_gen_test = none
-  bool_print_story_strings = 0.0
-  float_build_levels = 0.0
-  bool_shape_rule_stats = 0.0
-  bool_save_svg = 0.0
-  bool_save_gif = 0.0
-  bool_experimental_games = 0.0
-  bool_custom_error_texture = 0.0
+  title_screen_source = titlegen
+  bool_sub_titles = 0
+  bool_scale_items_with_map_size = 0
+  bool_print_fab_materials = 0
+  missing_material_behavior = ignore
+  bool_non_vanilla_as_missing = 0
+  bool_whole_names_only = 0
+  bool_shape_rule_stats = 0
+  bool_save_svg = 0
+  bool_save_gif = 0
+  bool_suppress_nolimit_warning = 0
+  bool_experimental_games = 0
+  bool_custom_error_texture = 0
   live_minimap = none
 
 @doom_item_control = 1
   float_potion = Default
   float_stimpack = Default
   float_medikit = Default
-  float_helmet = 3.0
+  float_helmet = 3
   float_green_armor = Default
   float_blue_armor = Default
   float_soul = Default
   float_backpack = Default
-  float_berserk = 0.0
+  float_berserk = 0
   float_invis = Default
   float_invul = Default
-  float_allmap = 0.0
-  float_goggles = 0.0
+  float_allmap = 0
+  float_goggles = 0
   float_mega = Default
   float_bullets = Default
   float_bullet_box = Default
@@ -201,33 +222,34 @@ map_format = udmf
 @export_map = 0
 
 @fauna_module = 1
-  bool_flies = 1.0
-  bool_rats = 1.0
+  bool_flies = 1
+  bool_rats = 1
 
 @gzdoom_marine_closets = 1
-  float_m_c_chance = 0.0
-  float_m_c_min = 1.0
-  float_m_c_max = 2.0
-  m_c_type = default
-  float_m_c_m_min = 1.0
-  float_m_c_m_max = 5.0
-  float_m_c_health = 100.0
-  m_c_m_type = default
-  float_m_c_level_min_pos = 0.5
-  float_m_c_level_max_pos = 0.5
-  m_c_tech = mid
+  float_m_c_chance = 10
+  float_m_c_min = 1
+  float_m_c_max = 1
+  m_c_type = reg
+  float_m_c_m_min = 1
+  float_m_c_m_max = 5
+  float_m_c_health = 100
+  m_c_m_type = reg
+  float_m_c_level_min_pos = 0
+  float_m_c_level_max_pos = 1
+  m_c_tech = prog
   m_c_waker = sight
-  m_c_color = MarAI1
+  m_c_color = rng2
   m_c_ff = no
-  bool_m_c_pdamage = 0.0
-  m_c_sprites = no
+  bool_m_c_pdamage = 0
+  m_c_sprites = yes1
   m_c_quantity = default
   m_c_strength = default
-  bool_m_c_power = 1.0
-  bool_m_c_follow = 0.0
-  bool_m_c_boss = 0.0
-  bool_m_c_rip = 0.0
-  bool_mc_in_secret = 0.0
+  bool_m_c_power = 1
+  bool_m_c_follow = 0
+  float_m_c_follow_distance = 2000
+  bool_m_c_boss = 0
+  bool_m_c_rip = 0
+  bool_m_c_in_secret = 0
 
 @hacx_mon_control = 0
   float_thug = Default
@@ -247,7 +269,7 @@ map_format = udmf
 @hacx_weapon_control = 0
   float_reznator = Default
   float_tazer = Default
-  float_cyrogun = Default
+  float_cryogun = Default
   float_fu2 = Default
   float_zooka = Default
   float_antigun = Default
@@ -296,11 +318,39 @@ map_format = udmf
   float_phoenix = Default
   float_firemace = Default
 
+@hexen_item_control = 0
+  float_h_vial = Default
+  float_h_flask = Default
+  float_h_urn = Default
+  float_blue_mana = Default
+  float_green_mana = Default
+  float_dual_mana = Default
+  float_ar_helmet = Default
+  float_ar_mesh = Default
+  float_ar_shield = Default
+  float_ar_amulet = Default
+  float_dragonskin_bracers = Default
+  float_krater_of_might = Default
+  float_banishment_device = Default
+  float_boots_of_speed = Default
+  float_chaos_device = Default
+  float_dark_servant = Default
+  float_disc_of_repulsion = Default
+  float_flechette = Default
+  float_icon_of_the_defender = Default
+  float_mystic_ambit_incant = Default
+  float_porkalator = Default
+  float_torch = Default
+  float_wings_of_wrath = Default
+  float_ultimate_weapon_pieces = Default
+
 @hexen_mon_control = 0
   float_ettin = Default
   float_afrit = Default
   float_centaur1 = Default
   float_centaur2 = Default
+  float_serpent1 = Default
+  float_serpent2 = Default
   float_wendigo = Default
   float_demon1 = Default
   float_demon2 = Default
@@ -313,21 +363,23 @@ map_format = udmf
   float_Menelkir = Default
   float_Korax = Default
 
+@historical_versions = 0
+  float_historical_oblige_v2 = 0
+
 @iwad_mode = 0
 
 @jokewad_module = 0
-  bool_fireblu_mode = 0.0
-  bool_pandemic_mode = 0.0
+  bool_fireblu_mode = 0
+  bool_pandemic_mode = 0
 
 @megawad_swapper = 0
 
 @misc = 1
-  float_oblige5x_grammar = 10.0
-  float_layout_absurdity = 10.0
-  float_linear_mode = 10.0
-  float_nature_mode = 10.0
-  float_streets_mode = 10.0
-  bool_urban_streets_mode = 1.0
+  float_layout_absurdity = 10
+  float_linear_mode = 10
+  float_nature_mode = 10
+  float_streets_mode = 10
+  bool_appropriate_street_themes = 1
   room_size_multiplier = mixed
   room_area_multiplier = mixed
   room_size_consistency = mixed
@@ -335,6 +387,7 @@ map_format = udmf
   room_area_mix_type = normal
   big_rooms = mixed
   big_outdoor_rooms = mixed
+  sub_rooms = mixed
   room_heights = mixed
   parks = mixed
   natural_parks = rare
@@ -346,44 +399,57 @@ map_format = udmf
   beams = mixed
   fences = mixed
   porches = mixed
+  pictures = mixed
   scenics = mixed
   corner_style = themed
   liquid_sinks = yes
   darkness = mixed
-  float_minimum_brightness = 144.0
-  float_maximum_brightness = 256.0
+  bool_outdoor_shadows = 1
+  float_minimum_brightness = 144
+  float_maximum_brightness = 256
   barrels = mixed
   doors = mixed
   keys = mixed
   trikeys = mixed
   switches = none
   local_switches = mixed
-  bool_road_markings = 1.0
+  bool_road_markings = 1
   street_traffic = mixed
-  bool_exit_signs = 1.0
+  bool_exit_signs = 1
   linear_start = 100
+  outdoor_openness = none
   dead_ends = rare
 
+@misc_slump = 0
+  float_bigify_slump = 50
+  float_forkiness_slump = 75
+  bool_dm_starts_slump = 0
+  bool_major_nukage_slump = 0
+
+@misc_wolf_3d = 0
+  room_size_multiplier_wolf_3d = 1
+
 @modded_game_extras = 0
-  bool_hn_markers = 0.0
-  bool_custom_actor_names = 0.0
-  bool_qcde_lootboxes = 0.0
-  bool_d4t_ents = 0.0
-  bool_trailblazer = 0.0
-  bool_complex_doom = 0.0
+  bool_hn_markers = 0
+  hn_info_type = hn_info_quest
+  bool_custom_actor_names = 0
+  bool_qcde_lootboxes = 0
+  bool_d4t_ents = 0
+  bool_trailblazer = 0
+  bool_complex_doom = 0
 
 @music_swapper = 1
 
 @prefab_control = 1
-  bool_alt_starts = 0.0
-  bool_foreshadowing_exit = 1.0
-  bool_autodetail = 1.0
+  bool_alt_starts = 0
+  bool_foreshadowing_exit = 1
+  bool_autodetail = 1
   point_prob = fab_default
   wall_prob = fab_default
   group_wall_prob = fab_default
-  float_single_room_theme = 50.0
-  float_limit_wall_groups = 50.0
-  bool_peered_exits = 1.0
+  float_single_room_theme = 50
+  float_limit_wall_groups = 50
+  bool_peered_exits = 1
   steppy_caves = yes
   pf_crushers = 1
   pf_dexterity = 1
@@ -392,43 +458,44 @@ map_format = udmf
   pf_mirror_mazes = 0.33
   pf_dark_mazes = 2
   pf_stair_ladders = 1
-  bool_jump_crouch = 1.0
+  bool_jump_crouch = 1
   pf_damaging_halls = default
-  bool_fab_match_theme = 1.0
+  bool_fab_match_theme = 1
 
 @prefab_control_generic = 0
-  bool_autodetail = 1.0
+  bool_autodetail = 1
   point_prob = fab_default
   wall_prob = fab_default
-  bool_fab_match_theme = 1.0
+  bool_fab_match_theme = 1
 
 @procedural_gotcha = 0
   gotcha_frequency = final
   float_gotcha_qty = 1.2
-  float_gotcha_strength = 4.0
+  float_gotcha_strength = 4
   gotcha_map_size = small
 
 @procedural_gotcha_zdoom = 1
   gotcha_frequency = epi
+  bool_gotcha_boss_fight = 1
   float_gotcha_qty = 0.2
-  float_gotcha_strength = 0.0
+  float_gotcha_strength = 0
   gotcha_map_size = small
+  bool_boss_gen = 1
   boss_gen_steepness = rare
-  bool_boss_gen = 1.0
-  bool_gotcha_boss_fight = 1.0
   boss_gen_diff = easier
+  boss_trait_diff = default
   boss_gen_health = muchless
   boss_gen_hitscan = default
-  bool_boss_gen_hpbar = 0.0
-  bool_boss_gen_music = 0.0
+  bool_boss_gen_hpbar = 0
+  bool_boss_gen_music = 0
   boss_gen_reinforce = none
   boss_gen_reinforcerate = weakester
-  bool_boss_gen_types = 1.0
+  bool_boss_gen_types = 1
   boss_gen_typelimit = softlimit
   boss_gen_weap = close
   boss_gen_exit = item
-  float_boss_gen_ammo = 5.0
-  float_boss_gen_heal = 5.0
+  float_boss_gen_ammo = 5
+  float_boss_gen_heal = 5
 
 @quake_mon_control = 0
   dog = default
@@ -442,8 +509,8 @@ map_format = udmf
   ogre = default
   fiend = default
   dth_knight = default
-  Vore = default
-  Shambler = default
+  vore = default
+  shambler = default
 
 @quake_weapon_control = 0
   ssg = default
@@ -460,7 +527,7 @@ map_format = udmf
   cloud_color = default
   terrain_color = default
   nebula_color = default
-  bool_influence_map_darkness = 0.0
+  bool_influence_map_darkness = 0
 
 @sky_generator_heretic = 0
   force_sky = sky_default
@@ -469,21 +536,23 @@ map_format = udmf
   cloud_color = default
   terrain_color = default
   nebula_color = default
-  bool_influence_map_darkness = 0.0
+  bool_influence_map_darkness = 0
+
+@slump_all_nazis = 0
 
 @stealth_mon_control = 0
-  stealth_demon = default
-  stealth_shooter = default
-  stealth_revenant = default
-  stealth_baron = default
-  stealth_gunner = default
-  stealth_vile = default
-  stealth_imp = default
-  stealth_caco = default
-  stealth_zombie = default
-  stealth_arach = default
-  stealth_knight = default
-  stealth_mancubus = default
+  float_stealth_zombie = Default
+  float_stealth_shooter = Default
+  float_stealth_imp = Default
+  float_stealth_demon = Default
+  float_stealth_caco = Default
+  float_stealth_baron = Default
+  float_stealth_gunner = Default
+  float_stealth_knight = Default
+  float_stealth_revenant = Default
+  float_stealth_mancubus = Default
+  float_stealth_arach = Default
+  float_stealth_vile = Default
 
 @stealth_mons = 0
   qty = less
@@ -501,50 +570,58 @@ map_format = udmf
   episode3 = no_change
   secret = no_change
 
+@theme_ctl_heretic = 0
+  episode1 = no_change
+  episode2 = no_change
+  episode3 = no_change
+  episode4 = no_change
+  episode5 = no_change
+  secret = no_change
+
 @zdoom_ambient_sound = 0
   snd_start_id = 20000
 
-@zdoom_marine_control = 1
-  marine_fist = none
-  marine_berserk = none
-  marine_saw = none
-  marine_pistol = none
-  marine_shotty = none
-  marine_ssg = none
-  marine_chain = none
-  marine_rocket = none
-  marine_plasma = none
-  marine_rail = none
-  marine_bfg = none
+@zdoom_marine_control = 0
+  float_marine_fist = Default
+  float_marine_berserk = Default
+  float_marine_saw = Default
+  float_marine_pistol = Default
+  float_marine_shotty = Default
+  float_marine_ssg = Default
+  float_marine_chain = Default
+  float_marine_rocket = Default
+  float_marine_plasma = Default
+  float_marine_rail = Default
+  float_marine_bfg = Default
 
 @zdoom_marines = 0
-  zdoom_marine_qty = scarce
+  zdoom_marine_qty = plenty
 
 @zdoom_specials = 1
   fog_generator = per_sky_gen
   fog_env = outdoor
   fog_intensity = subtle
-  bool_fog_affects_sky = 1.0
-  bool_dynamic_lights = 1.0
-  bool_glowing_flats = 1.0
+  bool_fog_affects_sky = 1
+  bool_dynamic_lights = 1
+  bool_glowing_flats = 1
   mapinfo_music_shuffler = no
   story_generator = none
-  bool_custom_quit_messages = 1.0
+  bool_custom_quit_messages = 1
   generic_intermusic = $MUSIC_READ_M
-  bool_episode_selection = 0.0
-  bool_no_intermission = 1.0
+  bool_episode_selection = 0
+  bool_no_intermission = 1
 
 @zdoom_specials_heretic = 0
   fog_generator = no
   fog_env = all
   fog_intensity = subtle
-  bool_fog_affects_sky = 1.0
-  bool_dynamic_lights = 1.0
-  bool_glowing_flats = 1.0
+  bool_fog_affects_sky = 1
+  bool_dynamic_lights = 1
+  bool_glowing_flats = 1
   mapinfo_music_shuffler = no
   story_generator = proc
-  bool_custom_quit_messages = 1.0
+  bool_heretic_quit_messages = 1
   generic_intermusic = MUS_INTR
-  bool_no_intermission = 0.0
+  bool_no_intermission = 0
 
 -- END --
