@@ -33,7 +33,7 @@ theme = bit_mixed
 ---- Architecture ----
 
 float_size = Progressive
-float_level_upper_bound = 36.0
+float_level_upper_bound = 30.0
 float_level_lower_bound = 22.0
 level_size_ramp_factor = 1
 level_size_bias = default
@@ -65,10 +65,10 @@ mon_variety = mixed
 mon_variety_jumpstart = default
 bosses = medium
 bossesnormal = minor
-traps = mixed
+traps = some
 trap_style = default
-trap_qty = default
-cages = few
+trap_qty = easier
+cages = rare
 cage_qty = default
 secret_monsters = no
 
