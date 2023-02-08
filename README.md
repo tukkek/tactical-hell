@@ -89,7 +89,7 @@ To see and change which key opens the console, open the in-game menu, then choos
 
 ## Generating your own WADs with Obsidian
 
-This version of Tactical Hell is compatible with [Obsidian's Beta 20 release](https://github.com/dashodanger/Obsidian/releases/tag/Obsidian-Current-Unstable). You will need to download a copy before starting. If you are not using Windows, follow the instructions on the `COMPILING.md` file to compile and run the executable.
+This version of Tactical Hell is compatible with [Obsidian's v20](https://github.com/obsidian-level-maker/Obsidian/releases/tag/Obsidian-v20-20230109). You will need to download a copy before starting. If you are not using Windows, follow the instructions on the `COMPILING.md` file to compile and run the executable.
 
 Tactical Hell provides an Obsidian configuration file, which you can [access here](https://raw.githubusercontent.com/tukkek/tactical-hell/main/CONFIG.txt) (right-click and Save As should work too).
 
