@@ -1,5 +1,5 @@
 -- CONFIG FILE : OBSIDIAN 20 "Gates of Tartarus"
--- Build 2023.01.14
+-- Build 2023.02.08
 -- Based on OBLIGE Level Maker (C) 2006-2017 Andrew Apted
 -- https://obsidian-level-maker.github.io
 
@@ -34,7 +34,7 @@ theme = bit_mixed
 ---- Architecture ----
 
 float_size = Progressive
-float_level_upper_bound = 30
+float_level_upper_bound = 28
 float_level_lower_bound = 22
 level_size_ramp_factor = 1
 level_size_bias = default
