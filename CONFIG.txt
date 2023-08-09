@@ -483,7 +483,7 @@ map_format_zdoom = udmf
   bool_boss_gen = 1
   boss_gen_steepness = rare
   boss_gen_diff = easier
-  boss_trait_diff = default
+  boss_trait_diff = easier
   boss_gen_health = muchless
   boss_gen_hitscan = default
   bool_boss_gen_hpbar = 0
@@ -493,7 +493,7 @@ map_format_zdoom = udmf
   bool_boss_gen_types = 1
   boss_gen_typelimit = softlimit
   boss_gen_weap = close
-  boss_gen_exit = item
+  boss_gen_exit = default
   float_boss_gen_ammo = 5
   float_boss_gen_heal = 5
 
