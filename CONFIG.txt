@@ -189,12 +189,12 @@ map_format_zdoom = udmf
   float_cells = Default
   float_cell_pack = Default
 
-@doom_mon_control = 1
-  float_zombie = 1.2
-  float_shooter = 1.2
-  float_gunner = 1.2
+@doom_mon_control = 0
+  float_zombie = Default
+  float_shooter = Default
+  float_gunner = Default
   float_ss_nazi = Default
-  float_imp = 1.2
+  float_imp = Default
   float_skull = Default
   float_demon = Default
   float_spectre = Default
