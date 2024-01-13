@@ -61,9 +61,9 @@ level_size_bias_wolf_3d = default
 ---- Combat ----
 
 float_mons = Progressive
-float_mix_it_up_upper_range = 0.35
-float_mix_it_up_lower_range = 0.15
-float_strength = 1
+float_mix_it_up_upper_range = 0.7
+float_mix_it_up_lower_range = 0.35
+float_strength = 0.55
 float_ramp_up = 0.5
 bool_pistol_starts = 1
 bool_quiet_start = 1
