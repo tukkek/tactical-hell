@@ -23,6 +23,8 @@
 -- Phytolizer
 -- https://github.com/dashodanger/Obsidian/
 
+seed = 3956040701471915918                               
+
 ---- Game Settings ----
 
 engine = idtech_1
@@ -62,7 +64,7 @@ level_size_bias_wolf_3d = default
 
 float_mons = Progressive
 float_mix_it_up_upper_range = 0.7
-float_mix_it_up_lower_range = 0.35
+float_mix_it_up_lower_range = 0.15
 float_strength = 0.55
 float_ramp_up = 0.5
 bool_pistol_starts = 1
@@ -406,7 +408,7 @@ map_format_zdoom = udmf
   darkness = mixed
   bool_outdoor_shadows = 1
   float_minimum_brightness = 144
-  float_maximum_brightness = 256
+  float_maximum_brightness = 208
   barrels = mixed
   doors = mixed
   keys = mixed
