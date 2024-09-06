@@ -87,8 +87,8 @@ float_mix_it_up_lower_range_wolf_3d = 0
 ---- Pickups ----
 
 health = more
-ammo = more
-weapons = very_soon
+ammo = bit_more
+weapons = sooner
 items = normal
 secrets = mixed
 secrets_bonus = none
