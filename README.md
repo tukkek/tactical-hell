@@ -56,7 +56,7 @@ If you are using Linux, the configuration file and mod files should are found on
 ## Suggested soundtrack
 Here are some amazing, high-octane, DMCA-friendly music that should go well with Tactical Hell:
 
-* [Sauer Anger](https://marcapullen.bandcamp.com/album/sauer-anger) by [Marc "Fanatic" Pullen](https://www.doomworld.com/fanatic/). 
+* [Odious](https://marcapullen.bandcamp.com/album/odious) by [Marc "Fanatic" Pullen](https://www.doomworld.com/fanatic/). 
 * OverClocked ReMix's [The Dark Side of Phobos](https://ocremix.org/album/4/doom-the-dark-side-of-phobos).
 * OverClocked ReMix's [Delta-Q-Delta](https://ocremix.org/album/11/doom-ii-delta-q-delta).
 
