@@ -8,6 +8,8 @@ This document's sections are organized according to features the project offers:
 
 While each one is designed to be part of a greater whole, they are modular and can be used indepedently of each other to your own liking.
 
+Join the community, https://discord.gg/5sXXcwPCSP!
+
 ## Rationale
 I love Oblige and [Obsidian](https://github.com/dashodanger/Obsidian/) but I have struggled to fine-tune settings that feel right for me. Part of it is that I want more depth in a FPS than vanilla Doom can provide and also that I'd rather play WADs as perma-death roguelites than with the more traditional Doom community approach of mastering levels and WADs death-by-death until you know them like the back of your hand.
 
